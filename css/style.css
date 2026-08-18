@@ -199,3 +199,166 @@ footer {
     }
 
 }
+
+/* ========================================
+   SECONDARY PAGES
+   ======================================== */
+
+.page-hero {
+    padding: 90px 0 45px;
+    max-width: 760px;
+}
+
+.page-hero h1 {
+    margin-bottom: 20px;
+}
+
+.page-intro {
+    font-size: 1.2rem;
+    max-width: 720px;
+}
+
+
+/* ========================================
+   PUBLICATIONS
+   ======================================== */
+
+.publication-section {
+    margin-top: 60px;
+}
+
+.publication-section h2 {
+    margin-top: 0;
+}
+
+.publication {
+    padding: 28px 0 32px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.publication:last-child {
+    border-bottom: none;
+}
+
+.publication h3 {
+    margin: 5px 0 8px;
+
+    max-width: 750px;
+
+    font-size: 1.2rem;
+    line-height: 1.45;
+
+    font-weight: normal;
+}
+
+.publication-venue {
+    margin-bottom: 5px;
+
+    color: var(--secondary);
+
+    font-size: 0.82rem;
+
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.authors {
+    margin: 8px 0;
+
+    color: #444;
+
+    font-size: 0.95rem;
+}
+
+.paper-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 16px;
+
+    margin-top: 12px;
+}
+
+.paper-links a {
+    font-size: 0.92rem;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid
+        color-mix(in srgb, var(--link) 40%, transparent);
+}
+
+.paper-links a:hover {
+    border-bottom-color: var(--link);
+}
+
+
+/* ========================================
+   RESEARCH
+   ======================================== */
+
+.research-topic {
+    margin-top: 65px;
+    max-width: 760px;
+}
+
+.research-topic h2 {
+    margin-top: 0;
+}
+
+.research-topic p {
+    max-width: 720px;
+}
+
+.equation-block {
+    margin: 35px 0;
+
+    padding: 20px 25px;
+
+    overflow-x: auto;
+
+    border-left: 2px solid var(--border);
+}
+
+
+/* ========================================
+   ACTIVE / HOVER NAVIGATION
+   ======================================== */
+
+.nav-links a {
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: var(--link);
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 650px) {
+
+    .page-hero {
+        padding: 55px 0 25px;
+    }
+
+    .page-hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .publication-section {
+        margin-top: 45px;
+    }
+
+    .publication {
+        padding: 22px 0;
+    }
+
+    .research-topic {
+        margin-top: 45px;
+    }
+
+}
