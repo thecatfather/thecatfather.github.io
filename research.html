@@ -1,32 +1,298 @@
-Research
+<!DOCTYPE html>
+<html lang="en">
 
-My research lies at the intersection of information theory,
-statistical decision theory, and reinforcement learning.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Information-theoretic limits of learning
+    <title>Research | Raghav Bongole</title>
 
-How can quantities such as mutual information and
-f-divergences characterize the fundamental difficulty
-of sequential decision problems?
+    <meta
+        name="description"
+        content="Research interests of Raghav Bongole in information theory, reinforcement learning and statistical decision theory."
+    >
 
-Minimax regret
+    <link rel="stylesheet" href="css/style.css">
 
-I study information-theoretic approaches to bounding
-the minimax regret of reinforcement-learning problems.
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
 
-Interactive statistical decision making
+    <script
+        async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 
-I am interested in decision problems in which observations
-are generated through interaction with the environment,
-particularly lower bounds for risk-sensitive objectives.
+</head>
 
-Fano-type inequalities
 
-I study extensions of Fano's inequality that can be used
-beyond classical probability-of-error arguments.
+<body>
 
-Tail risk
+<header>
 
-I am interested in risk measures such as quantiles and CVaR,
-and in information-theoretic methods for obtaining lower
-bounds for these objectives.
+    <nav class="container">
+
+        <a class="name" href="index.html">
+            Raghav Bongole
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="publications.html">Publications</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main class="container">
+
+    <section class="page-hero">
+
+        <p class="eyebrow">
+            Research
+        </p>
+
+        <h1>Research</h1>
+
+        <p class="page-intro">
+            My research lies at the intersection of
+            information theory, statistical decision theory,
+            and reinforcement learning.
+        </p>
+
+        <p class="page-intro">
+            I am particularly interested in using
+            information-theoretic methods to characterize
+            fundamental performance limits in interactive
+            learning and decision-making problems.
+        </p>
+
+    </section>
+
+
+
+    <section class="research-topic">
+
+        <h2>Information-Theoretic Limits of Learning</h2>
+
+        <p>
+            A recurring theme in my research is the use of
+            information measures to understand the fundamental
+            difficulty of statistical and sequential
+            decision-making problems.
+        </p>
+
+        <p>
+            Quantities such as mutual information and
+            divergence measures provide a way of relating
+            statistical distinguishability to achievable
+            decision-theoretic performance.
+        </p>
+
+        <div class="equation-block">
+
+            \[
+            I(V;Z)
+            =
+            D_{\mathrm{KL}}
+            \left(
+                P_{VZ}
+                \,\middle\|\,
+                P_V P_Z
+            \right).
+            \]
+
+        </div>
+
+    </section>
+
+
+
+    <section class="research-topic">
+
+        <h2>Reinforcement Learning and Minimax Regret</h2>
+
+        <p>
+            I study minimax regret in reinforcement-learning
+            problems from an information-theoretic perspective.
+        </p>
+
+        <p>
+            One direction of my work investigates how Bayesian
+            regret bounds, minimax duality, information ratios,
+            and mutual information can be used to obtain
+            algorithm-independent minimax regret guarantees.
+        </p>
+
+        <p>
+            These methods can be studied in settings including
+            bandit problems, Markov decision processes,
+            and structured reinforcement-learning models.
+        </p>
+
+        <p>
+            <a href="publications.html">
+                See related publications →
+            </a>
+        </p>
+
+    </section>
+
+
+
+    <section class="research-topic">
+
+        <h2>Interactive Statistical Decision Making</h2>
+
+        <p>
+            In interactive statistical decision making,
+            observations depend on actions chosen by the
+            learning algorithm.
+        </p>
+
+        <p>
+            This interaction introduces statistical dependence
+            that does not appear in classical passive estimation.
+            I am interested in converse techniques that remain
+            applicable under adaptive data collection.
+        </p>
+
+    </section>
+
+
+
+    <section class="research-topic">
+
+        <h2>Minimax Quantiles and Tail Risk</h2>
+
+        <p>
+            Expected risk and expected regret summarize average
+            performance, but they may not describe rare yet
+            consequential failures.
+        </p>
+
+        <p>
+            My recent work therefore considers minimax quantiles
+            and high-probability lower bounds for interactive
+            statistical decision problems.
+        </p>
+
+        <p>
+            This provides a framework for studying how the
+            fundamental difficulty of a learning problem depends
+            explicitly on a confidence or risk level.
+        </p>
+
+    </section>
+
+
+
+    <section class="research-topic">
+
+        <h2>Fano-Type Converse Methods</h2>
+
+        <p>
+            Fano's inequality is one of the classical tools for
+            deriving information-theoretic lower bounds.
+        </p>
+
+        <p>
+            I am interested in extensions of Fano-type arguments
+            that apply to more general loss functions,
+            interactive problems, and tail-sensitive criteria.
+        </p>
+
+        <p>
+            Recent work explores generalized formulations based
+            on bounded transformations of the loss and
+            Bernoulli \(f\)-divergence inequalities.
+        </p>
+
+    </section>
+
+
+
+    <section class="research-topic">
+
+        <h2>Risk-Sensitive Decision Making</h2>
+
+        <p>
+            Another direction concerns decision criteria beyond
+            expected loss, including quantiles and Conditional
+            Value-at-Risk (CVaR).
+        </p>
+
+        <p>
+            I am interested in information-theoretic methods
+            for deriving lower bounds on these risk-sensitive
+            quantities and understanding their behavior in
+            interactive learning problems.
+        </p>
+
+    </section>
+
+
+
+    <section class="research-topic">
+
+        <h2>Privacy and Fundamental Limits</h2>
+
+        <p>
+            I am also interested in how privacy constraints
+            alter fundamental statistical and decision-theoretic
+            limits.
+        </p>
+
+        <p>
+            In particular, recent work studies minimax quantile
+            lower bounds when the class of admissible decision
+            rules is restricted by mutual-information privacy
+            constraints.
+        </p>
+
+    </section>
+
+
+
+    <section class="research-topic">
+
+        <h2>Selected Research Papers</h2>
+
+        <p>
+            For manuscripts, conference papers, arXiv links,
+            and PDFs, see the complete
+            <a href="publications.html">publications page</a>.
+        </p>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © Raghav Bongole ·
+            KTH Royal Institute of Technology
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
